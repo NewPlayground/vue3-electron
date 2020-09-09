@@ -1,28 +1,44 @@
 <template>
-  <div class="hello-world">
-    <img :src="require('@/img/vue_logo.png').default" />
-    <h1>{{ msg }}</h1>
-  </div>
+  <vs-card>
+    <template #title>
+      <h3>Pot with a plant</h3>
+    </template>
+    <template #img>
+      <img src="https://vuesax.com/foto5.png" alt />
+    </template>
+    <template #text>
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+    </template>
+    <template #interactions>
+      <vs-button danger icon>
+        <i class="bx bx-heart"></i>
+      </vs-button>
+      <vs-button class="btn-chat" shadow primary>
+        <i class="bx bx-chat"></i>
+        <span class="span">54</span>
+      </vs-button>
+    </template>
+  </vs-card>
 </template>
 
 <script>
 export default {
-  name: 'HelloWorld',
+  name: "HelloWorld",
   props: {
-    msg: String
-  }
-}
+    msg: String,
+  },
+};
 </script>
 
 <style lang="scss">
-$nav-color: #F90;
+$nav-color: #f90;
 h1 {
   color: $nav-color;
 }
 
-.hello-world{
+.hello-world {
   position: absolute;
-  top:50%;
-  left:50%;
+  top: 50%;
+  left: 50%;
 }
 </style>

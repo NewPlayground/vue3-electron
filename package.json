@@ -15,7 +15,9 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@vue/compiler-sfc": "^3.0.0-rc.5",
+    "vue": "^2.6.12",
+    "vue-loader": "^15.9.3",
+    "vue-template-compiler": "^2.6.12",
     "css-loader": "^4.2.1",
     "electron": "^9.2.0",
     "electron-builder": "^22.8.0",
@@ -23,8 +25,6 @@
     "node-sass": "^4.14.1",
     "sass-loader": "^9.0.3",
     "style-loader": "^1.2.1",
-    "vue": "^3.0.0-rc.5",
-    "vue-loader": "^16.0.0-beta.4",
     "webpack": "^4.44.1",
     "webpack-cli": "^3.3.12"
   },

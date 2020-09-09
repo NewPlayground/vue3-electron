@@ -25,6 +25,13 @@ module.exports = {
         ]
       },
       {
+        test: /\.css$/,
+        use: [
+          'style-loader',//https://github.com/vuejs/vue-style-loader/issues/42
+          'css-loader'
+        ]
+      },
+      {
         test: /\.(png|jpe?g|gif)$/i,
         use: [
           {
